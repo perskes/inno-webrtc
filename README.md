@@ -17,6 +17,13 @@ Themes can be found in `/webrtc/css`
 
 A Live-Demo can be found here: [https://webrtc.persk.es](https://webrtc.persk.es) 
 
+### How to: Use a specific theme
+
+1. locate the desired theme in the `webrtc/css` folder
+2. locate the line `<link id="customTheme" rel="stylesheet" href="/css/businessCards-material.css">`
+3. change the "href" part to the desired theme name you chose in step 1
+4. make sure you add the `link` AFTER all other css imports (all other `link` tags)
+
 ### Available Themes
  - Default Theme - provided by Innovaphone
  - BYES - A [Bouygues E&S](https://www.bouygues-es-intec.ch/) styled theme (not official by any means!)
