@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html lang="de">
+     
+<head>
+<title>Test 3</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+     
+<link rel="stylesheet" href="css/innovaphone.widget.SideBar.css">
+<link rel="stylesheet" href="css/innovaphone.widget.BusinessCards.css">
+<link rel="stylesheet" href="css/innovaphone.widget.general.css">
+          
+<link rel="shortcut icon" href="favicon.ico">
+     
+</head>
+
+<body>
+
+     <!-- CONTAINER WITH SUPPORTERS -->
+     <div id="supporters-card-container">
+
+     </div>
+     <!-- // -->
+
+     <script src="innovaphone.common.crypto.js"></script>
+     <script src="innovaphone.pbxwebsocket.Connection.js"></script>
+     <script src="innovaphone.pbxwebsocket.ToneGenerator.js"></script>
+     <script src="innovaphone.pbxwebsocket.WebRtcEndpoint.js"></script>
+
+     <script src="innovaphone.widget.SideBar.js"></script>
+     <script src="innovaphone.widget.BusinessCards.js"></script>
+
+     <script>
+
+         var parameters = {
+             urlPbx: "wss://pbx.example.com/PBX0/WEBSOCKET/websocket",
+             urlAuth: "https://www.example.com.com/WidgetAuth.php",
+             pathPrefix: "",
+             username: null,
+             password: null,
+             device: null,
+             physicalLocation: null,
+             regContext: "0",
+             companyName: 'Company',
+             companyStreet: 'Address 1',
+             companyCity: 'Address 2',
+             companyTel: '+01 123 / 12345 - 0',
+             companyTrunk: '+01 123 / 12345',
+             companyFax: '+01 123 / 12345 - 9',
+             companyEmail: 'info@example.com',
+             supporters: [
+                 { name: 'Dummy 1', shortcut: 'dummy1', phone: '210', img: 'WidgetDummy1.jpg', 'email': 'dummy1@example.com', department: 'Development' },
+                 { name: 'Dummy 2', shortcut: 'dummy2', phone: '211', img: 'WidgetDummy2.jpg', 'email': 'dummy2@example.com', department: 'Sales' }
+             ],
+             status: {
+                 available: { text: 'Verfügbar', className: 'available', active: true },
+                 away: { text: 'Abwesend', className: 'not-available', active: false },
+                 lunch: { text: 'Beim Essen', className: 'not-available', active: false },
+                 vacation: { text: 'Im Urlaub', className: 'not-available', active: false },
+                 busy: { text: 'Beschäftigt', className: 'offline', active: false },
+                 dnd: { text: 'Nicht stören', className: 'offline', active: false },
+                 closed: { text: 'Offline', className: 'offline', active: false }
+             }
+         };
+
+		new innovaphone.widget.SideBarWidget(parameters);
+		new innovaphone.widget.CardWidget(parameters);
+          
+     </script>
+
+
+</body>
+</html>
+

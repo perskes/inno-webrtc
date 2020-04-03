@@ -1,0 +1,41 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#topMenu {
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: #777;
+    margin: 0;
+    display: none;
+}
+
+#topMenu li {
+    min-width: 120px;
+    display: inline-block;
+    height: 100%;
+    line-height: 45px;
+}
+
+#topMenu li:nth-of-type(1) {
+    min-width: 100px;
+    display: inline-block;
+    height: calc(100% - 8px);
+    line-height: 37px;
+    font-size: 1.2em;
+    float: left;
+    /* padding-left: 10px; */
+    background-color: #555;
+    color: white;
+    font-weight: bold;
+    border: 4px solid white;
+}
+
+#topMenu li:not(:nth-of-type(1)):hover {
+    color: #777;
+    background-color: white;
+    border-bottom: 2px solid #777;
+}
