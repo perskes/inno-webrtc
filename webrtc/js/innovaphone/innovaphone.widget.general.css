@@ -2,6 +2,9 @@
 @-moz-keyframes slideIn { from { width:0px; } to { width:80px; } }
 @keyframes slideIn { from { width:0px; } to { width:80px; } }
 
+*{
+    transition: all 0.3s;
+}
 
 .innovaphone-clearfix:before,
 .innovaphone-clearfix:after {
@@ -25,7 +28,7 @@
     margin: 4px;
     bottom: 0;
     left: 30px;
-    transition: .8s ease all;
+    transition: .1s ease all;
 }
 
   
@@ -141,7 +144,7 @@
 .innovaphone-icons__item img {
     width: 18px;
     margin-top: 9px;
-    transition: .3s ease all;
+    transition: .1s ease all;
 }
 
 .innovaphone-icons__item img.close,
