@@ -1,4 +1,4 @@
-*{
+* {
     transition: all 0.3s;
 }
 
@@ -9,24 +9,25 @@ body {
 
 #topMenu {
     height: 45px;
-    width: calc(100% - 45px);
+    width: calc(100% - 40px);
     text-align: center;
     background-color: white;
     color: #777;
     margin: 0;
+    box-shadow: 0 2px 0 0 #555;
 }
 
 #topMenu li {
     min-width: 120px;
     display: inline-block;
     height: 100%;
-    line-height: 45px;
+    line-height: 40px;
 }
 
 #topMenu li:nth-of-type(1) {
     min-width: 100px;
     display: inline-block;
-    height: calc(100% - 8px);
+    height: calc(100% - 10px);
     line-height: 37px;
     font-size: 1.2em;
     float: left;
@@ -40,5 +41,5 @@ body {
 #topMenu li:not(:nth-of-type(1)):hover {
     color: #777;
     background-color: white;
-    border-bottom: 2px solid #777;
+    box-shadow: inset -0 -5px 0 0 #777;
 }
