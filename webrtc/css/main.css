@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 * {
     transition: all 0.3s;
 }
@@ -15,6 +18,7 @@ body {
     color: #777;
     margin: 0;
     box-shadow: 0 2px 0 0 #444;
+    font-family: 'Roboto', sans-serif;
 }
 
 #topMenu li {
