@@ -68,7 +68,7 @@ body {
 
 
 #supporters-card-container .innovaphone-content {
-    height: 60%;
+    height: auto;
     float: none;
     margin-top: 0px;
     visibility: visible;
