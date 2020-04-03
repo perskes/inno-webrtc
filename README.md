@@ -20,3 +20,4 @@ A Live-Demo can be found here: [https://webrtc.persk.es](https://webrtc.persk.es
 
 # Demo
 
+<img src="https://github.com/perskes/inno-webrtc/blob/master/webrtc/screenshots/screencap1.gif?raw=true">
