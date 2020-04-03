@@ -58,8 +58,9 @@ body {
     float: left;
     transition: all 0.3s;
 }
+
 #supporters-card-container .innovaphone-root-visitenkarten:hover {
-    margin-top:15px;
+    margin-top: 15px;
     -webkit-box-shadow: var(--somewhat-serious-elevated-boxshadow);
     box-shadow: var(--somewhat-serious-elevated-boxshadow);
     transition: all 0.3s;
@@ -166,7 +167,7 @@ body {
     margin-top: 2px;
     margin-bottom: 0;
     margin-left: calc(50% - 12px);
-    /* bad hack for ALMOST center alignment float_left to prevent weird white-space offset -> TODO */
+    /* bad hack for ALMOST center alignment float-left to prevent weird white-space offset -> TODO */
     margin-right: auto;
     display: block;
     border-radius: 50%;
@@ -259,7 +260,6 @@ body {
     padding-top: 5px;
     font-size: 1.1em;
     padding-bottom: 10px;
-    /* position: relative; */
     display: block;
     word-break: break-word;
 }
@@ -292,22 +292,15 @@ body {
     padding: 0;
     margin: 0;
     font-size: 14px;
-    /* margin-left: 15px; */
-    /* margin-top: 8px; */
     float: none;
-    /* position: relative; */
-    /* display: block; */
 }
 
 .innovaphone-active-layer__supporter {
     height: 45px;
     width: calc(100% - 170px);
-    /* background-color: red; */
     top: 0;
     position: relative;
     margin-top: 0px;
-    /* margin-left: 5px; */
-    /* left: 5px; */
     float: right;
-    /* font-size: 0.9em; */
+    color: var(--byes-white);
 }
