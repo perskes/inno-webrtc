@@ -16,7 +16,7 @@ var parameters = {
 	companyEmail: 'support.sme@hosteddata.ch',
 	supporters: [
 		{name: 'Sebastian Perske', shortcut: 'sebastian.perske', phone: '10', img: 'img/sebastian.perske.jpg', 'email': 'sebastian.perske@bouygues-es.com', department: 'System-Engineer'},
-		{name: 'Enes Türedi', shortcut: 'enes.tueredi', phone: '20', img: 'img/placeholder.jpg', 'email': 'enes.tueredi@bouygues-es.com', department: 'System-Engineer'},
+		{name: 'En Tue', shortcut: 'en.tue', phone: '20', img: 'img/placeholder.jpg', 'email': 'en.tue@bouygues-es.com', department: 'System-Engineer'},
 	],
 	status: {
                 available: { text: 'Verfügbar', className: 'available', active: true },
