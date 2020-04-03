@@ -198,22 +198,22 @@
 
 
 .innovaphone-tooltip {
-    width: 120px;
-    min-height: 40px;
-    background-color: #006750;
-    background-color: #dedede;
-    position: absolute;
-    top: 130%;
-    left: calc(-200% + 12px);
+    width: 100px;
+    min-height: 0;
+    height: 31px!important;
+    /* background-color: #006750; */
+    background-color: rgba(0,0,0,0.6);
+    top: 135%;
+    left: calc(-200% + 20px);
     color: #fff;
-    color: #474747;
+    color: var(--text-light);
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 11px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .4s all ease;
@@ -239,6 +239,7 @@
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
+    display: none;
 }
 
 
