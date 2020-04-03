@@ -25,7 +25,7 @@ body {
     min-width: 120px;
     display: inline-block;
     height: 100%;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 #topMenu li:nth-of-type(1) {
