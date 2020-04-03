@@ -3,6 +3,11 @@
 [Innovaphone](https://innovaphone.com) offers a JS-Library to connect to their PBX and use it as a WebRTC Backend.
 This repo is for testing, proof of concept and adding features or themes.
 
+# Motivation, Goals
+
+The reason behind this repo is to concentrate knowledge realted to the Innovaphone WebRTC API/Library and demonstrate it's usefulness, create a place that serves as a showcase for workmates and clients.
+
+The end-goal is to write a wrapper or rewrite the provides businesscard / sidebar js to make it modern and more useful.
 
 # Themes
 Themes can be applied by loading the custom stylesheet after all the other stylesheets.
