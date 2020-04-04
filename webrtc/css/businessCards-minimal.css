@@ -8,17 +8,14 @@
 
 :root {
     /* material colors */
-    --primary: #009688;
-
-    --secondary: #ffc107;
-    --secondary-light: #fa5788;
-    --secondary-dark: #8c0032;
+    --primary: #cfc6bd;
+    --secondary: #4d4d4d;
 
     --green: #43a047;
     --red: #e53935;
     /* text colors */
-    --text-dark: #000;
-    --text-light: #fff;
+    --text-dark: #302827;
+    --text-light: #766d63;
 
     /* byes font */
     --material-fonts: 'Roboto', sans-serif;
@@ -29,6 +26,7 @@
     --somewhat-serious-boxshadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     --somewhat-serious-elevated-boxshadow: 3px 5px 10px 0px #bbb;
     --hard-boxshadow: 0px 1px 1px 1px #505050bb;
+    --another-boxshadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -41,21 +39,35 @@
     font-family: var(--material-fonts);
     background-color: white;
     left: 0;
-    width: 450px;
+    width: 300px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    height: 265px;
+    height: 450px;
     position: relative;
     display: inline-block;
     margin: 20px;
-    -webkit-box-shadow: var(--somewhat-serious-boxshadow);
-    box-shadow: var(--somewhat-serious-boxshadow);
+    -webkit-box-shadow: var(--another-boxshadow);
+    box-shadow: var(--another-boxshadow);
     padding: 5px;
     float: left;
     transition: all 0.3s;
-    box-shadow: inset 0 -185px 0 0 var(--primary), var(--somewhat-serious-boxshadow);
+    overflow: hidden;
 }
 
+
+#supporters-card-container .innovaphone-root-visitenkarten::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    width: 115%;
+    height: 30%;
+    transform: rotate(-10deg);
+    top: 0;
+    left: 0;
+    background-color: var(--secondary);
+    left: -35px;
+    top: -45px;
+}
 
 #supporters-card-container .innovaphone-content {
     height: auto;
@@ -76,15 +88,12 @@
 }
 
 .innovaphone-image {
-    width: 145px;
-    /* float: left; */
     position: relative;
-    height: 130px;
-    /* display: inline-block; */
+    height: 120px;
     width: auto;
-    /* margin: auto; */
-    margin-left: 35%;
-    margin-right: auto;
+    margin-left: 26%;
+    margin-top: 25px;
+    z-index: 2;
 }
 
 .innovaphone-image img {
@@ -96,7 +105,7 @@
     bottom: 0;
     width: auto;
     height: 100%;
-    box-shadow: 1px 3px 5px 1px #777;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -137,7 +146,7 @@
 #supporters-card-container .innovaphone-tab {
     width: calc(100% - 10px);
     height: 35px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     float: none;
     bottom: 5px;
     position: absolute;
@@ -198,9 +207,9 @@
 .innovaphone-tooltip {
     width: 100px;
     min-height: 0;
-    height: 31px!important;
+    height: 31px !important;
     /* background-color: #006750; */
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     top: 135%;
     left: calc(-200% + 20px);
     color: #fff;
@@ -258,7 +267,8 @@
 }
 
 .innovaphone-content__status {
-    color: #dedede;
+    color: var(--text-light);
+    margin-top: 50px;
 }
 
 .innovaphone-content__status__indicator {
@@ -268,7 +278,6 @@
     display: inline-block;
     vertical-align: middle;
     background-color: #00a300;
-    box-shadow: 1px 1px 2px 0px #555;
     margin-right: 5px;
 }
 
@@ -283,10 +292,7 @@
 
 
 #supporters-card-container > .innovaphone-root-visitenkarten > .innovaphone-content > .innovaphone-content__headline > strong {
-    color: var(--text-dark);
-    padding-top: 5px;
     font-size: 1.1em;
-    padding-bottom: 10px;
     display: block;
     word-break: break-word;
     text-align: center;
@@ -294,6 +300,10 @@
     font-weight: 500;
     font-size: 1.2em;
     letter-spacing: 0.5px;
+    top: 40px;
+    position: relative;
+    color: var(--text-dark);
+    font-weight: 800;
 }
 
 
@@ -325,61 +335,76 @@
     margin: 0;
     font-size: 14px;
     float: none;
+    text-align: center;
+    font-size: 17px;
 }
 
 .innovaphone-active-layer__supporter {
-    height: 45px;
-    width: calc(100% - 170px);
+    width: 100%;
     top: 0;
     position: relative;
-    margin-top: 40px;
-    float: right;
+    margin-top: 25px;
+    float: none;
     color: var(--text-light);
+    text-align: center;
 }
 
 #supporters-card-container > .innovaphone-root-visitenkarten > .innovaphone-content > .innovaphone-content__address > address {
-    display: none;
+    display: block;
+    margin-top: 35px;
+    text-align: left;
+}
+
+#supporters-card-container > .innovaphone-root-visitenkarten > .innovaphone-content > .innovaphone-content__address > address > strong {
+    font-size: 15px;
+    color: var(--text-light);
 }
 
 
 #supporters-card-container .innovaphone-content__address {
-    display: none;
+    display: block;
+    color: var(--text-light);
 }
 
 
 
 #supporters-card-container .innovaphone-active-layer .innovaphone-icons {
-    text-align: left;
+    text-align: center;
     padding-left: 0px;
     height: 48px;
-    width: 162px;
+    width: 100%;
     padding-top: 0px;
-    float: left;
-    margin-top: 40px;
-    margin-right: 2px;
+    float: none;
+    margin-top: -15px;
+    margin-left: -5px;
 }
 
 #supporters-card-container .innovaphone-active-img {
-    width: 180px;
-    margin-top: 7px;
+    margin-top: 20px;
     border: 2px solid white;
-    height: 180px;
     vertical-align: middle;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 0px;
-    /* border-radius: 100%; */
-    margin-left: calc(50% - 100px);
-    margin-right: auto;
-    /* margin-left: 50%; */
+
+
+    position: relative;
+    height: 120px;
+    width: auto;
+    margin-left: 26%;
+    margin-top: 25px;
+    z-index: 2;
 }
 
 
 #supporters-card-container .innovaphone-active-img img {
-
     width: auto;
     height: 100%;
     border-radius: 100%;
-    border: 10px solid white;
-    box-shadow: 1px 2px 5px 0 #999;
+    border: 5px solid white;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15)
+}
+
+
+.innovaphone-active-layer__department {
+    width: 50%;
+    margin-left: calc(25%);
+    padding-top: 10px;
 }
