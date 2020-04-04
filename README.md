@@ -28,6 +28,7 @@ A Live-Demo can be found here: [https://webrtc.persk.es](https://webrtc.persk.es
  - Default Theme - provided by Innovaphone
  - BYES - A [Bouygues E&S](https://www.bouygues-es-intec.ch/) styled theme (not official by any means!)
  - Material - A theme inspired by googles "material design" that visibly shaped the web.
+ - Minimal - A minimal almost-black and almost-white theme
 ...
 
 
