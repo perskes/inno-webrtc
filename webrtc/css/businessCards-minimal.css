@@ -408,3 +408,27 @@
     margin-left: calc(25%);
     padding-top: 10px;
 }
+
+
+#supporters-card-container #innovaphone-widget-video-remote {
+width: 75%;
+    max-height: 75%;
+    position: absolute;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #006068;
+    z-index: 3;
+    margin-top: 75%;
+    margin-left: 12%;
+}
+
+#supporters-card-container #innovaphone-widget-video-local {
+    width: 75%;
+    max-height: 75%;
+    position: absolute;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #006068;
+    z-index: 3;
+    margin-left: 12%;
+}
