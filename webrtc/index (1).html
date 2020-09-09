@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/js/innovaphone/innovaphone.widget.SideBar.css">
+    <link rel="stylesheet" href="/js/innovaphone/innovaphone.widget.BusinessCards.css">
+    <link rel="stylesheet" href="/js/innovaphone/innovaphone.widget.general.css">
+
+    <script src="/js/innovaphone/innovaphone.common.crypto.js"></script>
+    <script src="/js/innovaphone/innovaphone.pbxwebsocket.Connection.js"></script>
+    <script src="/js/innovaphone/innovaphone.pbxwebsocket.ToneGenerator.js"></script>
+    <script src="/js/innovaphone/innovaphone.pbxwebsocket.WebRtcEndpoint.js"></script>
+
+    <script src="/js/innovaphone/innovaphone.widget.SideBar.js"></script>
+    <script src="/js/innovaphone/innovaphone.widget.BusinessCards.js"></script>
+
+
+    <!-- slimmer overview, looks less complicated for admins and workmates if this is not in the html-->
+    <script src="/js/custom/parameters.js"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/businessCards-byes.css">
+    
+
+    <title>WebRTC-Test ~perskes</title>
+</head>
+
+<body>
+<ul id="topMenu">
+<li>Themes</li>    
+<li>Original (Innovaphone)</li>    
+<li>BYES E&S</li>    
+<li>Minimal-Modern</li>    
+<li>Google</li>    
+</ul>
+
+    <script>
+        //new innovaphone.widget.SideBarWidget(parameters); either, or. both is overkill
+        new innovaphone.widget.CardWidget(parameters);
+
+    </script>
+    <div id="supporters-card-container"></div>
+
+</body>
+
+    <!-- custom js -->
+     <script>
+    
+    // cosmetically fixing the pipe, tackling the element generation later on
+    var nastyPipe = document.querySelectorAll("#supporters-card-container > div.innovaphone-root-visitenkarten > div.innovaphone-content > div.innovaphone-content__headline > strong")
+
+    for (x = 0; x < nastyPipe.length; x++) {
+        nastyPipe[x].innerHTML = nastyPipe[x].innerHTML.replace(" | ", "<br>")
+    
+    </script>
+</html>

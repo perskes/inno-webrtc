@@ -1,0 +1,195 @@
+@-webkit-keyframes slideIn { from { width:0px; } to { width:80px; } }
+@-moz-keyframes slideIn { from { width:0px; } to { width:80px; } }
+@keyframes slideIn { from { width:0px; } to { width:80px; } }
+
+
+.innovaphone-clearfix:before,
+.innovaphone-clearfix:after {
+  display: table;
+  content: "";
+}
+.innovaphone-clearfix:after {
+  clear: both;
+}
+      
+
+.innovaphone-copy a {
+    text-decoration: none;
+    color: #00646c;
+}
+
+.innovaphone-back {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    bottom: 0;
+    left: 30px;
+    transition: .8s ease all;
+}
+
+  
+.innovaphone-content__status__indicator {
+    width: 12px;
+    height: 12px;
+    margin-top: -2px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #00a300;
+}
+.innovaphone-content__status__indicator.available {
+    background-color: #00a300;
+}
+.innovaphone-content__status__indicator.offline {
+    background-color: #e90b18;
+}
+.innovaphone-content__status__indicator.not-available {
+    background-color: #BFAB05;
+}
+
+.innovaphone-tab__supporter-img.available {
+    border-left: 4px solid #00a300;
+}
+.innovaphone-tab__supporter-img.offline {
+    border-left: 4px solid #e90b18;
+}
+.innovaphone-tab__supporter-img.not-available {
+    border-left: 4px solid #BFAB05;
+}
+
+
+.innovaphone-content__address address {
+    font-style: normal; 
+}
+
+.innovaphone-content__address a {
+    text-decoration: none;
+    color: #545454;
+}
+
+.innovaphone-tab img {
+    width: 68px;
+    margin: 4px;
+}
+
+   
+.innovaphone-icons > div{
+    height: 35px;
+    width: 81px;
+    display: inline-block;
+}
+
+
+.innovaphone-icons__item--mail {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+
+.innovaphone-icons__item.available {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+
+/*.innovaphone-root-visitenkarten .innovaphone-icons__item:hover .innovaphone-tooltip, .innovaphone-root .innovaphone-icons__item:hover .innovaphone-tooltip {*/
+.innovaphone-root-visitenkarten .innovaphone-icons__item:hover .innovaphone-tooltip, .innovaphone-root--open .innovaphone-icons__item:hover .innovaphone-tooltip {   
+    opacity: 1;
+    visibility: visible;
+}
+
+.innovaphone-tooltip {
+    width: 120px;
+    min-height: 40px;
+    background-color: #006750;
+    background-color: #dedede;
+    position: absolute;
+    top: -2px;
+    left: -130px;
+    color: #fff;
+    color: #474747;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .4s all ease;
+    transition: .4s all ease;
+}
+.innovaphone-tooltip--smaller {
+    font-size: 12px;
+    top: -15px;
+}
+
+.innovaphone-tooltip:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 103, 80, 0);
+    border-left-color: #006750;
+    border-left-color: #dedede;
+    border-width: 6px;
+    margin-top: -6px;
+}
+
+.innovaphone-icons__item img {
+    width: 18px;
+    margin-top: 9px;
+    transition: .3s ease all;
+}
+
+.innovaphone-icons__item img.close,
+.innovaphone-active-layer .innovaphone-icons__item img {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.innovaphone-icons__item img.open {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.innovaphone-icons__item--mail img {
+    margin-top: 11px;
+}
+
+.innovaphone-active-layer {
+    width: 100%; 
+    height: 245px; 
+    background: #dedede; 
+    position: absolute; 
+    left: 0; 
+    top: 0;
+}
+
+.innovaphone-active-layer .innovaphone-icons__item {
+    margin-left: 10px;
+    margin-top: 2px;
+    float: left;
+}
+
+
+.innovaphone-image{
+    width: 145px;
+    float: left;
+    position: relative;
+    height: 170px;
+}
+.innovaphone-image img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+}
+

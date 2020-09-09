@@ -1,0 +1,249 @@
+/* 
+    NOTE: be aware that using google fonts might 
+    require you to make changes to you to update
+    your privacy disclaimer under the GDPR
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    /* byes colors */
+    --byes-blue: #009EC3;
+    --byes-orange: #F15A22;
+    --byes-white: #fff;
+    --byes-black: #333;
+    --byes-bg: #F8F8F8;
+    --byes-light-gray: #9c9c9c;
+    --byes-light-grey: #9c9c9c;
+    --byes-dark-gray: #658389;
+    --byes-dark-grey: #658389;
+
+    /* byes font */
+    --byes-fonts: "Gotham", "Open Sans", Arial, sans-serif;
+
+    /* nice colors */
+    --bootstrap-green: #28a745;
+    --bootstrap-red: #dc3545;
+    --bootstrap-yellow: #ffc107;
+
+    /* the rest*/
+
+    --somewhat-serious-boxshadow: 1px 1px 3px 1px #bbb;
+}
+
+body {
+    background-color: var(--byes-bg);
+}
+
+#supporters-card-container .innovaphone-root-visitenkarten {
+    box-sizing: border-box;
+    font-size: 12px;
+    color: var(--byes-black);
+    line-height: 1.3;
+    font-family: var(--byes-fonts);
+    background-color: var(--byes-white);
+    left: 0;
+    width: 450px;
+    box-shadow: none;
+    height: 230px;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: var(--somewhat-serious-boxshadow);
+    padding: 5px;
+    float: left;
+}
+
+
+#supporters-card-container .innovaphone-content {
+    height: 60%;
+    float: none;
+    margin-top: 0px;
+    visibility: visible;
+    opacity: 1;
+    background-color: none;
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.innovaphone-image {
+    width: 145px;
+    float: left;
+    position: relative;
+    height: 170px;
+    display: inline-block;
+    width: auto;
+    height: 60%;
+}
+
+.innovaphone-image img {
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 100%;
+}
+
+
+#supporters-card-container .innovaphone-icons {
+    height: 56px;
+    width: 100%;
+    margin-top: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/* credit where credit is due, but as of now it's in the way of the design, thus display:none;*/
+#supporters-card-container .innovaphone-copy {
+    position: absolute;
+    bottom: 1.5%;
+    right: 2%;
+    bottom: 2px;
+    display: none;
+}
+
+
+/* not really the best way to place the tab on the bottom, let's find a better solution */
+/*
+#supporters-card-container .innovaphone-tab {
+    width: 100%;
+    height: 56px;
+    background-color: #aaaaaa;
+    float: none;
+    border: 0px;
+    position: relative;
+    margin-top: calc(10% - 5px);
+    
+}
+*/
+
+#supporters-card-container .innovaphone-tab {
+    width: calc(100% - 10px);
+    height: 35px;
+    background-color: var(--byes-blue);
+    float: none;
+    bottom: 5px;
+    position: absolute;
+}
+}
+
+#supporters-card-container .innovaphone-icons {
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+#supporters-card-container .innovaphone-icons > div {
+    text-align: center;
+    display: inline-block;
+}
+
+#supporters-card-container .innovaphone-icons__item {
+
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    margin-left: calc(50% - 12px);
+    /* bad hack for ALMOST center alignment float_left to prevent weird white-space offset -> TODO */
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+    background-color: var(--byes-black);
+    text-align: center;
+    position: relative;
+    opacity: .6;
+    cursor: default;
+    float: left;
+}
+
+
+.innovaphone-icons__item img {
+
+    width: 15px;
+    margin-top: 8px;
+    /* the icons themselves are not 100% centered, thus the mail icon looks like it's 2px off to the top, while the cam icon looks centered -> TODO */
+    transition: .3s ease all;
+}
+
+
+
+.innovaphone-tooltip {
+    width: 120px;
+    min-height: 40px;
+    background-color: #006750;
+    background-color: #dedede;
+    position: absolute;
+    top: 130%;
+    left: calc(-200% + 12px);
+    color: #fff;
+    color: #474747;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .4s all ease;
+    transition: .4s all ease;
+}
+
+
+.innovaphone-tooltip:after {
+    left: calc(50% - 7px);
+    top: -3px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 103, 80, 0);
+    border-left-color: #006750;
+    border-left-color: #dedede;
+    border-width: 10px;
+    margin-top: -14px;
+    transform: rotate(-90deg);
+}
+
+
+.innovaphone-tab__supporter-img.available {
+    border-left: 4px solid var(--bootstrap-green);
+}
+
+.innovaphone-tab__supporter-img.offline {
+    border-left: 4px solid var(--bootstrap-red);
+}
+
+.innovaphone-content__status__indicator.offline {
+    background-color: var(--bootstrap-red);
+}
+
+.innovaphone-content__status__indicator.available {
+    background-color: var(--bootstrap-green);
+}
+
+
+
+#supporters-card-container > .innovaphone-root-visitenkarten > .innovaphone-content > .innovaphone-content__headline > strong {
+    color: var(--byes-orange);
+    padding-top: 5px;
+    font-size: 1.1em;
+    padding-bottom: 10px;
+    /* position: relative; */
+    display: block;
+    word-break: break-word;
+}
