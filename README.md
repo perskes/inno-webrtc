@@ -5,7 +5,7 @@ This repo is for testing, proof of concept and adding features or themes.
 
 # Motivation, Goals
 
-The reason behind this repo is to concentrate knowledge realted to the Innovaphone WebRTC API/Library and demonstrate it's usefulness, create a place that serves as a showcase for workmates and clients.
+The motivation behind this repo is to build knowledge in regards to the Innovaphone WebRTC API/Library and demonstrate it's usefulness, and to create a place that serves as a showcase for workmates and clients.
 
 The end-goal is to write a wrapper or rewrite the provided businesscard / sidebar js to make it modern and more useful.
 
@@ -15,7 +15,7 @@ Doing so will overwrite selectors if specified in the custom stylesheet, otherwi
 
 Themes can be found in `/webrtc/css`
 
-A Live-Demo can be found here: [https://webrtc.persk.es](https://webrtc.persk.es) 
+A Live-Demo can be found here: [https://webrtc.persk.es](https://webrtc.persk.es) -> no longer available
 
 ### How to: Use a specific theme
 
@@ -26,7 +26,7 @@ A Live-Demo can be found here: [https://webrtc.persk.es](https://webrtc.persk.es
 
 ### Available Themes
  - Default Theme - provided by Innovaphone
- - BYES - A [Bouygues E&S](https://www.bouygues-es-intec.ch/) styled theme (not official by any means!)
+ - BYES - A [Bouygues E&S InTec](https://www.bouygues-es-intec.ch/) inspired theme (not official by any means!)
  - Material - A theme inspired by googles "material design" that visibly shaped the web.
  - Minimal - A minimal almost-black and almost-white theme
 ...
